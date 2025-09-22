@@ -19,6 +19,8 @@ const staticFilesDir = path.join(__dirname, "..", "dist")
 
 server.use(cors())
 server.use(express.json())
+
+
 server.use(express.static(staticFilesDir))
 
 server.use("/api",router)
